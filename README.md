@@ -1,5 +1,11 @@
 # Recommendation System
 
+```
+cd World-Movies-RecommendationSys_and_Visualization
+streamlit run movies_recommender_app.py
+
+```
+
 
 
 
