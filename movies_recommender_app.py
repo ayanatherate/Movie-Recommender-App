@@ -15,7 +15,9 @@ inp=st.text_input(label='Enter a movie name, you just watched:')
 
 
 
-data=pd.read_csv(r'C:\Users\User\World-Movies-RecommendationSys_and_Visualization\Recommendation_Database\Recommendations_data.csv')
+#data=pd.read_csv(r'C:\Users\User\World-Movies-RecommendationSys_and_Visualization\Recommendation_Database\Recommendations_data.csv')
+
+data=pd.read_csv(r'https://github.com/ayanatherate/World-Movies-RecommendationSys_and_Visualization/blob/main/Recommendation_Database/Recommendations_data.csv')
 
 #print(data['recommendaions'])
 
