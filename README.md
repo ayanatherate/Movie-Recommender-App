@@ -1,7 +1,8 @@
 # Recommendation System
 
 Content-based Recommendation System that recommends closest movies based on similarity in content (movie plot) with the movie name provided.
-Uses Nearest-Neighbors algorithm. Further filtering done based on movie language and rating.
+Uses Nearest-Neighbors algorithm. Further filtering done based on movie language and rating. <br>
+Run the app on your local machine:
 
 
 ```
