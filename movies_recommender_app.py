@@ -7,17 +7,21 @@ import pandas as pd
 import numpy as np
 import streamlit as st
 import time
+import requests
 
 st.title('Movies Recommender')
 st.subheader('Let AI decide for you, what to watch next!')
 
 inp=st.text_input(label='Enter a movie name, you just watched:')
 
-
+url='https://github.com/ayanatherate/World-Movies-RecommendationSys_and_Visualization/blob/main/Recommendation_Database/Recommendations_data.csv'
+r = requests.get(url)
+text = r.iter_lines()
+data= csv.reader(text, delimiter=',')
 
 #data=pd.read_csv(r'C:\Users\User\World-Movies-RecommendationSys_and_Visualization\Recommendation_Database\Recommendations_data.csv')
 
-data=pd.read_csv(r'https://github.com/ayanatherate/World-Movies-RecommendationSys_and_Visualization/blob/main/Recommendation_Database/Recommendations_data.csv')
+#data=pd.read_csv(r'https://github.com/ayanatherate/World-Movies-RecommendationSys_and_Visualization/blob/main/Recommendation_Database/Recommendations_data.csv')
 
 #print(data['recommendaions'])
 
