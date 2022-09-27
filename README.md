@@ -1,7 +1,13 @@
 # Recommendation System
 
+Content-based Recommendation System that recommends closest movies based on similarity in content (movie plot) with the movie name provided.
+Uses Nearest-Neighbors algorithm. Further filtering done based on movie language and rating.
+
+
 ```
+git clone https://github.com/ayanatherate/World-Movies-RecommendationSys_and_Visualization.git
 cd World-Movies-RecommendationSys_and_Visualization
+pip install -r requirements.txt
 streamlit run movies_recommender_app.py
 
 ```
