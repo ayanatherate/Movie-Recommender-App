@@ -7,7 +7,7 @@ Run the app on your local machine:
 
 ```
 git clone https://github.com/ayanatherate/World-Movies-RecommendationSystem_and_Visualization.git
-cd World-Movies-RecommendationSystem_and_Visualization
+cd World-Movies-RecommendationSystem-and-Visualization
 pip install -r requirements.txt
 streamlit run movies_recommender_app.py
 
