@@ -13,6 +13,12 @@ streamlit run movies_recommender_app.py
 
 ```
 
+App Demo:
+<img width="957" alt="image" src="https://user-images.githubusercontent.com/59755186/193034429-15d2c6da-9182-4638-8314-45a4962fd888.png">
+<img width="953" alt="image" src="https://user-images.githubusercontent.com/59755186/193036817-b7ddaea3-fa0b-4e39-b1b6-5ea3e7d20fcc.png">
+
+
+
 
 
 
