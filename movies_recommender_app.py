@@ -29,6 +29,9 @@ def map_names(name):
     for i in range(len(match_names)):
         if name==match_names[i]:
             movie_index=i
+        else:
+            st.write('Oops! Seems like this movie is not listed on our Database. You can also try checking out the official name of the movie from Google and try again')
+            st.stop()
             
     return movie_index
 
