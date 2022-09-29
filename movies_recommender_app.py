@@ -43,8 +43,14 @@ else:
 
 recommendation=[]
 
-for i in data['recommendaions'][movie_index_].split(','):
-    recommendation.append(int(i))
+try:
+    for i in data['recommendaions'][movie_index_].split(','):
+        recommendation.append(int(i))
+except:
+    st.write('Oops! Seems like this movie is not listed on our Database. You can also try checking out the official name of the movie from Google and try again!')
+    st.stop()
+
+
 st.caption('Here are your recommended movie lists:')   
 for i in recommendation:
    temp= data[data['id']==i]
