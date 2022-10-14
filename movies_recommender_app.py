@@ -9,7 +9,7 @@ import streamlit as st
 import time
 
 
-
+st.set_page_config(page_title='Movie Recommendation App', page_icon=None, layout="centered", initial_sidebar_state="auto", menu_items=None)
 page_bg_img = '''
 <style>
 .stApp {
