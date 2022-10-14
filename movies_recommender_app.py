@@ -17,7 +17,7 @@ def take_inp():
 
 
 
-data=pd.read_csv(r'C:\Users\User\World-Movies-RecommendationSystem-and-Visualization\Recommendation_Database\Recommendations_data.csv')
+data=pd.read_csv(r'https://raw.githubusercontent.com/ayanatherate/World-Movies-RecommendationSystem-and-Visualization/main/Recommendation_Database/Recommendations_data.csv')
 
 #print(data['recommendaions'])
 
