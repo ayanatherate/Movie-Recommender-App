@@ -5,7 +5,7 @@ Uses Nearest-Neighbors algorithm. Further filtering done based on movie language
 Run the app on your local machine:
 
 App deployed on Streamlit Cloud:
-<ahref='https://ayanatherate-world-movies-recomme-movies-recommender-app-ihtpdo.streamlitapp.com/'>Click here to view app</a>
+<a href='https://ayanatherate-world-movies-recomme-movies-recommender-app-ihtpdo.streamlitapp.com/'>Click here to view app</a>
 
 
 App Demo:
