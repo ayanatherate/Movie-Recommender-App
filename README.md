@@ -11,8 +11,10 @@ App deployed on Streamlit Cloud:
 App Demo:
 <br>
 <br>
-<img width="957" alt="image" src="https://user-images.githubusercontent.com/59755186/193034429-15d2c6da-9182-4638-8314-45a4962fd888.png">
-<img width="953" alt="image" src="https://user-images.githubusercontent.com/59755186/193036817-b7ddaea3-fa0b-4e39-b1b6-5ea3e7d20fcc.png">
+<img width="960" alt="image" src="https://user-images.githubusercontent.com/59755186/195914616-e6fcbe04-9bab-438f-9bf6-6484900b0b95.png">
+<img width="959" alt="image" src="https://user-images.githubusercontent.com/59755186/195914769-13e31c37-e170-41fa-89ad-68ae9a9e7ab2.png">
+
+
 
 
 
