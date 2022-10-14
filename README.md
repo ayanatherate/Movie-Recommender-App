@@ -4,14 +4,9 @@ Content-based Recommendation Application that recommends closest movies based on
 Uses Nearest-Neighbors algorithm. Further filtering done based on movie language and rating. <br>
 Run the app on your local machine:
 
+App deployed on Streamlit Cloud:
+<ahref='https://ayanatherate-world-movies-recomme-movies-recommender-app-ihtpdo.streamlitapp.com/'>Click here to view app</a>
 
-```
-git clone https://github.com/ayanatherate/World-Movies-RecommendationSystem-and-Visualization.git
-cd World-Movies-RecommendationSystem-and-Visualization
-pip install -r requirements.txt
-streamlit run movies_recommender_app.py
-
-```
 
 App Demo:
 <br>
