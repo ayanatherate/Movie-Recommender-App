@@ -17,7 +17,7 @@ def take_inp():
 
 
 
-data=pd.read_csv(r'https://raw.githubusercontent.com/ayanatherate/World-Movies-RecommendationSystem-and-Visualization/main/Recommendation_Database/Recommendations_data.csv')
+data=pd.read_csv(r"https://raw.githubusercontent.com/ayanatherate/World-Movies-RecommendationSystem-and-Visualization/main/Recommendation_Database/Recommendations_data.csv")
 
 #print(data['recommendaions'])
 
@@ -29,9 +29,12 @@ def map_names(name):
     for i in range(len(match_names)):
         if name==match_names[i]:
             movie_index=i
-        else:
-            st.write('Oops! Seems like this movie is not listed on our Database. You can also try checking out the official name of the movie from Google and try again')
-            st.stop()
+            break
+        
+    
+            
+            
+        
             
     return movie_index
 
@@ -49,8 +52,6 @@ try:
 except:
     st.write('Oops! Seems like this movie is not listed on our Database. You can also try checking out the official name of the movie from Google and try again!')
     st.stop()
-
-
 st.caption('Here are your recommended movie lists:')   
 for i in recommendation:
    temp= data[data['id']==i]
