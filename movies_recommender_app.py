@@ -7,6 +7,7 @@ import pandas as pd
 import numpy as np
 import streamlit as st
 import time
+import re
 
 
 st.set_page_config(page_title='Movie Recommendation App', page_icon=None, layout="centered", initial_sidebar_state="auto", menu_items=None)
