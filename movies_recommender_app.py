@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
-"""
-@author: Ayan
-"""
+
 
 import pandas as pd
 import numpy as np
@@ -13,6 +11,7 @@ st.subheader('Let AI decide for you, what to watch next!')
 
 def take_inp():
     inp=st.text_input(label='Enter a movie name, you just watched:')
+    inp=inp.lower()
     return inp
 
 
