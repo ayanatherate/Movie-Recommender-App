@@ -23,9 +23,9 @@ App Demo:
 
 
 
-
+<h3> Also in Jupyter Notebook: </h3>
 # World-Movies-Visualization
-Deep-dive NLP: Visual exploration and analysis of movie scripts of top movie-producing languages across the world.
+Visual exploration and analysis of movie scripts of top movie-producing languages across the world.
 
 Used:
 1) WordCloud Visualization and Topic Modelling/pyLDAvis of movie plots of top 50 movies (by popularity) from top countries
