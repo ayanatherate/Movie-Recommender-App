@@ -25,7 +25,7 @@ App Demo:
 
 <h3> Also in Jupyter Notebook: </h3>
 
-# World-Movies-Visualization
+# Movies Visualization
 Visual exploration and analysis of movie scripts of top movie-producing languages across the world.
 
 Used:
