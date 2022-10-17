@@ -2,7 +2,6 @@
 
 Content-based Recommendation Application that recommends closest movies based on similarity in content (movie plot) with the movie name provided.
 Uses Nearest-Neighbors algorithm based on Cosine distance metric. Further filtering done based on movie language and rating. <br>
-Run the app on your local machine:
 
 App deployed on Streamlit Cloud:
 <a href='https://ayanatherate-world-movies-recomme-movies-recommender-app-ihtpdo.streamlitapp.com/'>Click here to view app</a>
