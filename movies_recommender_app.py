@@ -70,7 +70,7 @@ num_made_recommends=0
 
 
 for i in recommendation:
-    while num_made_recommends<num_movies:
+    if num_made_recommends<num_movies:
         temp= data[data['id']==i]
         st.write('----------------------')
         time.sleep(1)
