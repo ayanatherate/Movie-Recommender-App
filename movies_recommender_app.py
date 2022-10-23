@@ -68,8 +68,9 @@ except:
 st.caption('Here are your recommended movie lists:')   
 num_made_recommends=0
 
-while num_made_recommends<num_movies:
-    for i in recommendation:
+
+for i in recommendation:
+    while num_made_recommends<num_movies:
         temp= data[data['id']==i]
         st.write('----------------------')
         time.sleep(1)
