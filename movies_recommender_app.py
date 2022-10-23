@@ -1,7 +1,4 @@
-# -*- coding: utf-8 -*-
-"""
-@author: Ayan
-"""
+
 
 import pandas as pd
 import numpy as np
@@ -25,6 +22,7 @@ st.subheader('Let AI decide for you, what to watch next!')
 
 def take_inp():
     inp=st.text_input(label='Enter a movie name, you just watched:')
+    num_movies=st.set_slider('Select number of recommendations you want',options=[1,2,3,4,5,6,7,8,9,10])
     inp=inp.lower()
     inp=re.sub('[^a-zA-Z0-9 ]','',inp)
     return inp
@@ -67,17 +65,25 @@ except:
     st.write('Oops! Seems like this movie is not listed on our Database. You can also try checking out the official name of the movie from Google and try again!')
     st.stop()
 st.caption('Here are your recommended movie lists:')   
-for i in recommendation:
-   temp= data[data['id']==i]
-   st.write('----------------------')
-   time.sleep(1)
-   st.write(temp['title'].values[0])
-   st.caption(f'Released on : {temp.release_date.values[0]}, Rating: {temp.vote_average.values[0]}')
-   print()
-   st.caption(temp['overview'].values[0])
-   print()
-   print()
-   print()
+num_made_recommneds=0
+
+while num_made_recommends<num_movies:
+    for i in recommendation:
+        temp= data[data['id']==i]
+        st.write('----------------------')
+        time.sleep(1)
+        st.write(temp['title'].values[0])
+        st.caption(f'Released on : {temp.release_date.values[0]}, Rating: {temp.vote_average.values[0]}')
+        print()
+        st.caption(temp['overview'].values[0])
+        print()
+        print()
+        print()
+        
+        num_made_recommends+=1
+
+    
+
 
 
     
