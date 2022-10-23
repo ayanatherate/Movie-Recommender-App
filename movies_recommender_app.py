@@ -22,6 +22,7 @@ st.subheader('Let AI decide for you, what to watch next!')
 
 def take_inp():
     inp=st.text_input(label='Enter a movie name, you just watched:')
+    num_movies=st.select_slider('Select number of recommendations you want',options=[1,2,3,4,5,6,7,8,9,10])
     inp=inp.lower()
     inp=re.sub('[^a-zA-Z0-9 ]','',inp)
     return inp
@@ -50,8 +51,8 @@ def map_names(name):
     return movie_index
 
 inp=take_inp()
-num_movies=st.select_slider('Select number of recommendations you want',options=[1,2,3,4,5,6,7,8,9,10])
-if inp=='':
+
+if inp=='' and num_movies>1:
     st.stop()
 else:
     movie_index_=map_names(inp)
