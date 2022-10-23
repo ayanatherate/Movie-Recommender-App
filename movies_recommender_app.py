@@ -25,7 +25,7 @@ def take_inp():
     num_movies=st.select_slider('Select number of recommendations you want',options=[1,2,3,4,5,6,7,8,9,10])
     inp=inp.lower()
     inp=re.sub('[^a-zA-Z0-9 ]','',inp)
-    return inp
+    return inp,num_movies
 
 
 
@@ -50,9 +50,9 @@ def map_names(name):
             
     return movie_index
 
-inp=take_inp()
+inp,num_movies=take_inp()
 
-if inp=='':
+if inp=='' and num_movies<0:
     st.stop()
 else:
     movie_index_=map_names(inp)
