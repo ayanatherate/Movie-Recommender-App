@@ -52,7 +52,7 @@ def map_names(name):
 
 inp=take_inp()
 
-if inp=='' and num_movies>1:
+if inp=='':
     st.stop()
 else:
     movie_index_=map_names(inp)
