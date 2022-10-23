@@ -22,7 +22,7 @@ st.subheader('Let AI decide for you, what to watch next!')
 
 def take_inp():
     inp=st.text_input(label='Enter a movie name, you just watched:')
-    num_movies=st.select_slider('Select number of recommendations you want',options=[1,2,3,4,5,6,7,8,9,10])
+    num_movies=st.select_slider('Select number of recommendations you want',options=[for i in range(16])
     inp=inp.lower()
     inp=re.sub('[^a-zA-Z0-9 ]','',inp)
     return inp,num_movies
