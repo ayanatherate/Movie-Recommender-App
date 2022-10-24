@@ -10,8 +10,9 @@ App deployed on Streamlit Cloud:
 App Demo:
 <br>
 <br>
-<img width="960" alt="image" src="https://user-images.githubusercontent.com/59755186/195914616-e6fcbe04-9bab-438f-9bf6-6484900b0b95.png">
-<img width="959" alt="image" src="https://user-images.githubusercontent.com/59755186/195914769-13e31c37-e170-41fa-89ad-68ae9a9e7ab2.png">
+
+
+https://user-images.githubusercontent.com/59755186/197465110-404a7bd6-9197-4ae3-a731-bab6ec5f752c.mp4
 
 
 
