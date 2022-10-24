@@ -72,6 +72,7 @@ for i in recommendation:
         time.sleep(1)
         st.write(temp['title'].values[0])
         
+        #scraping from tmdb web
         to_search_str='+'.join(temp['title'].values[0].split(' '))
         url=f'https://www.themoviedb.org/search?query={to_search_str}'
         r=requests.get(url)
