@@ -78,7 +78,7 @@ for i in recommendation:
         st.write('----------------------')
         time.sleep(1)
         st.write(temp['title'].values[0])
-        to_search_str='+'.join(temp['title'].split(' '))
+        to_search_str='+'.join(temp['title'].values[0].split(' '))
         url=f'https://www.themoviedb.org/search?query={to_search_str}'
         r=requests.get(url)
         src=r.content
