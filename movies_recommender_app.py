@@ -1,5 +1,3 @@
-
-
 import pandas as pd
 import numpy as np
 import streamlit as st
@@ -78,6 +76,7 @@ for i in recommendation:
         st.write('----------------------')
         time.sleep(1)
         st.write(temp['title'].values[0])
+        
         to_search_str='+'.join(temp['title'].values[0].split(' '))
         url=f'https://www.themoviedb.org/search?query={to_search_str}'
         r=requests.get(url)
@@ -86,6 +85,7 @@ for i in recommendation:
         thumb = soup.find("img", class_ = "poster")
         imgurl=thumb['src']
         imgurl='https://themoviedb.org/'+imgurl
+        
         st.image(imgurl)
         #st.image+AGb32huPHb/Rqp9MNlepMh9knnP96o3cjxsdykMvDKfz5VXll8wpeWVAQWgy0OVptOj3n20JRs+nH9MVKtW8SxR7VXGSTxX2sVlHO4iWUDIBKnK5qjc6Pp1zO01xYwSSuu1nZASR8a0c18dlRGZvqqM5od/DaDSWVjZ3bxWsEUCDA2ouM1ptphNgyqAJgxdD/aq+iwi5vJbphkFs5NaOt30mn2El3FD4qxDc6g87fMj89s0dtPXReOPtL/AEpWMi31iCvJA2stcBBcxZWFQVzkb/KsPS9VNuwvIjuif94oGPnii2012zniDRtG3xPIrcmSpQbRQhs3kl3zjLfyjtXTUrlLOHZuG48sfSvOrdSWNlEWeVQfIDuaBbrVLjV52lMvgQg5we5qpMfiwzyvZ16xDy6I88hxuddq+mawtPsbqTS40to5Hd7l/aX6oG1DnPka0b/NzHsMjug4UH/FGHQcNq1hNEihJQ2HXdksMcH0FBLL6xJ5fhyxr36gJt41t3IYLkD+LzPvo16FiVVnYAkFtoY+eK93nRVtPdtNlsMckBsCt+ysY9NtRHEANowAKzyn7IxOSqi7lR3YD4mpXNIF25cbmPJJqUvQB4rL6kneLT9qHG9gp+FfalXD+ka5cLulxrDYxCPjIyasTIskMiOMqyEEHzBFSpUfS4/BPadI65COVBXHH+Ky7m6lds52H7HFfalbI8Otmirbo5xZZgzMWOfM5rZtUGwseSO1SpVSH+MlReWNVzj+Fc15tLmayuEuLZykq85B7+h94qVKA1pJ2mHOla5d3MNmZRETKpLEL7jit+47fMVKlIl08l5MVHLJL9PtSpUoBB//2Q==')
         st.caption(f'Released on : {temp.release_date.values[0]}, Rating: {temp.vote_average.values[0]}')
