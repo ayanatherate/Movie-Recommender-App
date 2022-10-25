@@ -58,7 +58,7 @@ def map_names(name):
             break        
     return movie_index
 
-
+inp,num_movies=take_inp()
 
 if len(inp)==0 and num_movies==0:
     st.stop()
@@ -108,8 +108,8 @@ for i in recommendation:
 
     
 
-if __name__==__main__:
-    inp,num_movies=take_inp()
+
+    
     
 
     
