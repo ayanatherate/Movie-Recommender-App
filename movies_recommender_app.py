@@ -25,7 +25,7 @@ st.markdown(hide_streamlit_style2, unsafe_allow_html=True)
 page_bg_img = '''
 <style>
 .stApp {
-background-image: url("https://i.ibb.co/t869zV7/istockphoto-1124347647-170667a.jpg");
+background-image: url("https://cdn.vox-cdn.com/uploads/chorus_asset/file/8689315/image.gif");
 background-size: cover;
 }
 </style>
