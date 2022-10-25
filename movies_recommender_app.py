@@ -8,7 +8,7 @@ from bs4 import BeautifulSoup
 import re
 
 
-st.set_page_config(page_title='Movie Recommendation App', page_icon="https://www.flaticon.com/free-icon/clapperboard_1038100?term=cinema&page=1&position=13&page=1&position=13&related_id=1038100&origin=tag", layout="centered", initial_sidebar_state="auto", menu_items=None)
+st.set_page_config(page_title='Movie Recommendation App', page_icon="https://cdn-icons-png.flaticon.com/512/1038/1038100.png", layout="centered", initial_sidebar_state="auto", menu_items=None)
 hide_streamlit_style2= '''
 <style>
 #MainMenu {visibility: hidden;}
