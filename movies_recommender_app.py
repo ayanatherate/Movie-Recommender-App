@@ -7,8 +7,19 @@ import pandas as pd
 from bs4 import BeautifulSoup
 import re
 
+hide_streamlit_style2= '''
+<style>
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+header {visibility: hidden;}
+.css-1rs6os {visibility: hidden;}
+.css-17ziqus {visibility: hidden;}
+</style>
 
-st.set_page_config(page_title='Movie Recommendation App', page_icon=None, layout="centered", initial_sidebar_state="auto", menu_items=None)
+'''
+st.markdown(hide_streamlit_style2, unsafe_allow_html=True) 
+
+st.set_page_config(page_title='Movie Recommendation App', page_icon="https://www.flaticon.com/free-icon/clapperboard_1038100?term=cinema&page=1&position=13&page=1&position=13&related_id=1038100&origin=tag", layout="centered", initial_sidebar_state="auto", menu_items=None)
 page_bg_img = '''
 <style>
 .stApp {
