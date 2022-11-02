@@ -4,7 +4,7 @@ Content-based Recommendation Application that recommends closest movies based on
 Uses Nearest-Neighbors algorithm based on Cosine distance metric. Further filtering done based on movie language and rating. <br>
 
 App deployed on Streamlit Cloud:
-<a href='https://ayanatherate-movie-recommender-ap-movies-recommender-app-w13aew.streamlitapp.com/'>Click here to view app</a>
+<a href='https://moviesrecommender.streamlitapp.com/'>Click here to view app</a>
 
 
 App Demo:
