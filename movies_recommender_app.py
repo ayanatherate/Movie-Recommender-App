@@ -11,7 +11,7 @@ import tmdbsimple as tmdb
 
 
 
-tmdb.API_KEY = '8265bd1679663a7ea12ac168da84d2e8'
+tmdb.API_KEY = '87c0452b777962b0a21a119893c6bbfa'
 tmdb.REQUESTS_SESSION = requests.Session()
 search = tmdb.Search()
 
