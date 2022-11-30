@@ -78,6 +78,7 @@ try:
         recommendation.append(int(i))
 except:
     st.write('Oops! Seems like this movie is not listed on our Database. You can also try checking out the official name of the movie from Google and try again!')
+    st.selectbox('Choose a movie from the list below', match_names)
     st.stop()
     
 st.caption('Here are your recommended movie lists:')   
