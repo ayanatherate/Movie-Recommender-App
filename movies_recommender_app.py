@@ -100,7 +100,7 @@ for i in recommendation:
         soup = BeautifulSoup(src, 'lxml')
         thumb = soup.find("img", class_ = "poster")
         try:
-            movie_srch=' '.join(temp['title'].values[0].split(' ')
+            movie_srch=' '.join(temp['title'].values[0].split(' '))
             response = search.movie(query=movie_srch)
             path=f"https://image.tmdb.org/t/p/original/{search.results[0]['poster_path']}"
                                 
