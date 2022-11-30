@@ -83,7 +83,7 @@ for i in recommendation:
         temp= data[data['id']==i]
         st.write('----------------------')
         time.sleep(1)
-        st.write(temp['title'].values[0])
+        st.title(temp['title'].values[0])
         
         #scraping from tmdb web
         to_search_str='+'.join(temp['title'].values[0].split(' '))
