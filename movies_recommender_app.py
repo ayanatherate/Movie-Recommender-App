@@ -78,7 +78,7 @@ try:
         recommendation.append(int(i))
 except:
     st.write('Oops! Seems like this movie is not listed on our Database. You can also try checking out the official name of the movie from Google and try again!')
-    selected_movie=st.selectbox('Choose a movie from the list below', match_names)
+    selected_movie=st.selectbox('You can also choose a movie from the list below', match_names)
     movie_index_=map_names(selected_movie)
     for i in data['recommendaions'][movie_index_].split(','):
         recommendation.append(int(i))
